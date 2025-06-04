@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: 4px solid rgb(38, 33, 27);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-active {
+  border-bottom: 2px solid black;
+}
+
+.menu-section {
+  background-color: rgb(38, 33, 27);
+  padding: 20px;
+  color: white;
+}
+
+.menu-section h2 {
+  margin-left: 20px;
+}
+
+.add-button {
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin: 10px 20px;
+  cursor: pointer;
+}
+
+.menu-list {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu-item {
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  justify-content: space-between;
+}
+
+.menu-item img {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.menu-info {
+  flex: 1;
+}
+
+.menu-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-actions i {
+  cursor: pointer;
+  font-size: 18px;
+}

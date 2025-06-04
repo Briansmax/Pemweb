@@ -1,0 +1,91 @@
+/* Global */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Section */
+.pesanan-section {
+  padding: 30px;
+}
+
+.pesanan-section h2 {
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.pesanan-actions {
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #17a2b8;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Daftar Pesanan */
+.pesanan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pesanan-item {
+  background-color: white;
+  padding: 15px;
+  border-left: 5px solid #aaa;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.pesanan-info h4 {
+  margin: 0 0 5px;
+}
+
+.status {
+  font-weight: bold;
+}
+
+/* Status Warna */
+.status {
+  color: black;
+}
+
+.status-menunggu {
+  color: orange;
+}
+
+.status-selesai {
+  color: green;
+}
+
+.status-dibatalkan {
+  color: red;
+}
