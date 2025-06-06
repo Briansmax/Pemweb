@@ -1,5 +1,9 @@
 <?php
 include 'config.php';
+
+// Update semua status pesanan menjadi 'Selesai'
+$updateQuery = "UPDATE pesanan SET status = 'Selesai'";
+mysqli_query($mysqli, $updateQuery);
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -41,7 +45,7 @@ include 'config.php';
     <div class="logo">UPN CANTEE<span style="color:#00ff00">N</span></div>
     <nav>
       <a href="menu.php">Menu</a>
-      <a href="riwayat.php">Riwayat Penjualan</a>
+      <a href="riwayat_pesanan.php">Riwayat Penjualan</a>
       <a href="pesananmasuk.php">Pesanan Masuk</a>
       <a href="#" class="nav-active">Daftar Pesanan</a>
     </nav>
@@ -67,21 +71,13 @@ include 'config.php';
       echo '<tr><th>ID</th><th>Nama Pemesan</th><th>Menu</th><th>Jumlah</th><th>Status</th><th>Waktu</th></tr>';
 
       while ($row = mysqli_fetch_assoc($result)) {
-        $statusClass = '';
-        if ($row['status'] === 'Selesai') {
-          $statusClass = 'status-selesai';
-        } elseif ($row['status'] === 'Menunggu') {
-          $statusClass = 'status-menunggu';
-        } elseif ($row['status'] === 'Dibatalkan') {
-          $statusClass = 'status-dibatalkan';
-        }
-
+        // Karena sudah di-update semua jadi 'Selesai', langsung pakai class 'status-selesai'
         echo '<tr>';
         echo '<td>' . intval($row['id']) . '</td>';
         echo '<td>' . htmlspecialchars($row['nama_pemesan']) . '</td>';
         echo '<td>' . htmlspecialchars($row['menu']) . '</td>';
         echo '<td>' . intval($row['jumlah']) . '</td>';
-        echo '<td><span class="' . $statusClass . '">' . htmlspecialchars($row['status']) . '</span></td>';
+        echo '<td><span class="status-selesai">Selesai</span></td>';
         echo '<td>' . htmlspecialchars($row['waktu']) . '</td>';
         echo '</tr>';
       }

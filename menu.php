@@ -12,7 +12,7 @@
     <nav>
       <a href="menu.php" class="nav-active">Menu</a>
       <a href="riwayat_pesanan.php">Riwayat Penjualan</a>
-      <a href="tambahpesanan.php">Pesanan Masuk</a>
+      <a href="daftarpesanan.php">Pesanan Masuk</a>
     </nav>
   </header>
 

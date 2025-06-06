@@ -46,6 +46,7 @@ include 'config.php';
           echo '<p>Status: <span class="status ' . $statusClass . '">' . htmlspecialchars($status) . '</span></p>';
           echo '</div>';
           echo '</div>';
+          
         }
       }
       ?>
